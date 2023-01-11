@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "db:reset": "npm install sequelize pg && npm install --save-dev sequelize-cli && npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www"
   },
